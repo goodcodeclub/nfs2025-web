@@ -2,41 +2,73 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 .host-grotesk {
-    font-family: "Host Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
-  body
-  {
-    font-family: "Host Grotesk", sans-serif;
-    font-optical-sizing: auto;
-  }
+body {
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
 
-  .text-primary
-  {
-    color:#12d27d !important
-  }
+.text-primary {
+  color: #12d27d !important
+}
 
-  
-  .btn-primary
-  {
-    background-color:#12d27d !important;
-    border-color:#12d27d !important
-  }
-  
-  .bg-primary
-  {
-    background-color:#12d27d !important;
-  }
-  html.sr *.load-hidden {
-    visibility: hidden;
+
+.btn-primary {
+  background-color: #12d27d !important;
+  border-color: #12d27d !important
+}
+
+.bg-primary {
+  background-color: #12d27d !important;
+}
+
+.subtext {
+  max-width: 700px;
+}
+
+html.sr *.load-hidden {
+  visibility: hidden;
+}
+
+.img-square {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  /* fixed height for squareness */
+  object-fit: cover;
+  /* crop instead of stretch */
+
+  border-radius: 1rem;
+  /* matches Bootstrap rounded-4 */
+}
+
+.custom-carousel-control {
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+}
+
+.carousel-control-prev.custom-carousel-control {
+  left: -2rem; /* Move it to the left outside */
+}
+
+.carousel-control-next.custom-carousel-control {
+  right: -2rem; /* Move it to the right outside */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Inverts white to black */
 }
 
 @media screen and (max-width: 991px) {
-    #sideimage {
-        position: relative !important;
-        height: 25vh !important;
-        width: 100% !important;
-    }
+  #sideimage {
+    position: relative !important;
+    height: 25vh !important;
+    width: 100% !important;
+  }
 }
