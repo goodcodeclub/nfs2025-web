@@ -2,6 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { stringify } from 'yaml';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function Page() {
 

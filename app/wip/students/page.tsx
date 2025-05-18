@@ -1,26 +1,27 @@
 export default function Page() {
 
     return <>
-        <header className="bg-white border-bottom py-3">
+
+{/*Header*/}
+
+        <header className="site-header py-4 border-bottom">
             <div className="container d-flex justify-content-between align-items-center">
+
                 {/* Logo */}
-                <div className="d-flex align-items-start mb-3">
-                    <div className="fw-bold fs-4 text-dark">
-                        NextFirstSteps
-                    </div>
+                <div className="brand d-flex align-items-start">
+                    <span className="brand-name">NextFirstSteps</span>
                     <img
                         src="/logo.svg"
                         alt="Company Logo"
-                        style={{ width: '12px', height: 'auto' }}
-                        className="me-1"
+                        className="brand-icon"
                     />
                 </div>
 
                 {/* Navigation */}
-                <nav className="d-none d-md-flex gap-4 align-items-center">
-                    <a href="#" className="text-dark text-decoration-none">Services</a>
-                    <a href="#" className="text-dark text-decoration-none">For Employers</a>
-                    <a href="#" className="text-dark text-decoration-none">For Students</a>
+                <nav className="main-nav d-none d-md-flex">
+                    <a href="#">Services</a>
+                    <a href="#">For Employers</a>
+                    <a href="#">For Students</a>
                 </nav>
 
                 {/* CTA Button */}
@@ -30,22 +31,24 @@ export default function Page() {
             </div>
         </header>
 
-        <section className="py-5 bg-white">
+{/*Hero Section*/}
+
+        <section className="hero-section">
             <div className="container">
-                <div className="row align-items-start">
+                <div className="row align-items-center">
 
                     {/* Left column: Text content */}
-                    <div className="col-md-6 mb-4 mb-md-0">
-                        <h1 className="fw-bold mt-5">
+                    <div className="col-md-6 hero-text">
+                        <h1>
                             Launch Your <br />
-                            <span className="text-success">Creative Career</span>
+                            <span className="highlight">Creative Career</span>
                         </h1>
-                        <p className="text-muted mt-4 mb-5">
+                        <p>
                             Showcase your skills, connect with innovative companies, and grow your career with real-world opportunities.
                         </p>
-                        <div className="d-flex gap-3">
+                        <div className="cta-primary-buttons py-5">
                             <button className="btn btn-outline-dark">Join the Directory</button>
-                            <button className="btn btn-success">Explore Opportunities</button>
+                            <button className="btn btn-primary">Explore Opportunities</button>
                         </div>
                     </div>
 
@@ -54,78 +57,38 @@ export default function Page() {
                         <img
                             src="/stickynote.jpg"
                             alt="Creative Board"
-                            className="img-fluid rounded-4"
+                            className="hero-image"
                         />
                     </div>
                 </div>
             </div>
         </section>
-        <section className="py-5 w-100">
+
+{/*Sponsor Section*/}
+
+        <section className="sponsor-section">
             <div className="container text-center mb-4">
-                <p className="text-muted mb-0">
+                <p className="sponsor-tagline">
                     In partnership with Canada’s leading creative and technology programs.
                 </p>
             </div>
 
             <div className="container-fluid">
-                <div className="d-flex flex-wrap justify-content-center gap-4 px-3">
-                    <img
-                        src="/gbc logo.png"
-                        alt="George Brown"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
-                    <img
-                        src="/rgd.png"
-                        alt="RGD"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
-                    <img
-                        src="/gbc logo.png"
-                        alt="George Brown"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
-                    <img
-                        src="/rgd.png"
-                        alt="RGD"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
-                    <img
-                        src="/gbc logo.png"
-                        alt="George Brown"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
-                    <img
-                        src="/rgd.png"
-                        alt="RGD"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
-                    <img
-                        src="/gbc logo.png"
-                        alt="George Brown"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
-                    <img
-                        src="/rgd.png"
-                        alt="RGD"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
-                    <img
-                        src="/gbc logo.png"
-                        alt="George Brown"
-                        className="img-fluid"
-                        style={{ maxHeight: '60px' }}
-                    />
+                <div className="sponsor-logos">
+                    <img src="/gbc logo.png" alt="George Brown" className="sponsor-logo" />
+                    <img src="/rgd.png" alt="RGD" className="sponsor-logo" />
+                    <img src="/gbc logo.png" alt="George Brown" className="sponsor-logo" />
+                    <img src="/rgd.png" alt="RGD" className="sponsor-logo" />
+                    <img src="/gbc logo.png" alt="George Brown" className="sponsor-logo" />
+                    <img src="/rgd.png" alt="RGD" className="sponsor-logo" />
+                    <img src="/gbc logo.png" alt="George Brown" className="sponsor-logo" />
+                    <img src="/rgd.png" alt="RGD" className="sponsor-logo" />
+                    <img src="/gbc logo.png" alt="George Brown" className="sponsor-logo" />
                 </div>
             </div>
         </section>
+
+{/*Opportunities for Students Section*/}
 
         <section className="py-5">
             <div className="container">
@@ -133,7 +96,7 @@ export default function Page() {
                     {/* Left Column: Image */}
                     <div className="col-md-5 mb-4 text-center">
                         <img
-                            src="/collab.jpg" 
+                            src="/collab.jpg"
                             alt="Team Collaboration"
                             className="img-fluid rounded-4"
                         />
@@ -145,158 +108,133 @@ export default function Page() {
                         <p className="text-muted mt-5">
                             We connect emerging talent like you with forward-thinking startups and creative teams. Gain exposure, mentorship, and the chance to work on real projects that build your future.
                         </p>
-                        <ul className="list-unstyled mt-4">
-                            <li className="mb-3 d-flex align-items-start">
-                                <span className="text-success me-2">✔</span>
-                                <span>Be discovered by hiring teams actively looking for fresh talent</span>
+                        <ul className="opportunity-list">
+                            <li>
+                                <i className="bi bi-check-circle-fill check-icon"></i>
+                                Be discovered by hiring teams actively looking for fresh talent
                             </li>
-                            <li className="mb-3 d-flex align-items-start">
-                                <span className="text-success me-2">✔</span>
-                                <span>Receive guidance and mentorship</span>
+                            <li>
+                                <i className="bi bi-check-circle-fill check-icon"></i>
+                                Receive guidance and mentorship
                             </li>
-                            <li className="d-flex align-items-start">
-                                <span className="text-success me-2">✔</span>
-                                <span>Access real-world opportunities, not just job listings</span>
+                            <li>
+                                <i className="bi bi-check-circle-fill check-icon"></i>
+                                Access real-world opportunities, not just job listings
                             </li>
                         </ul>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section className="py-5 bg-light text-center">
+
+{/*Get Started Section*/}
+
+        <section className="get-started-section text-center">
             <div className="container">
-                {/* Heading */}
-                <h1 className="fw-bold mb-3">How to Get Started</h1>
-                <p className="text-muted mb-5 subtext mx-auto">
+                <h2 className="get-started-title">How to Get Started</h2>
+                <p className="get-started-subtext">
                     NextFirstSteps offers tailored paths to meet your hiring goals — whether you prefer posting
                     roles, browsing vetted candidates, or working with dedicated recruitment support.
                 </p>
-                {/* Cards Row */}
+
                 <div className="row g-5 justify-content-center">
-                    {/* Step 1 */}
+                    {/* Card 1 */}
                     <div className="col-md-4">
-                        <div className="bg-white rounded-4 shadow-sm p-4 h-100 text-start">
-                            <div className="d-flex align-items-start mb-3">
-                                <img
-                                    src="/logo.svg"
-                                    alt="Company Logo"
-                                    style={{ width: '32px', height: 'auto' }}
-                                    className="me-4"
-                                />
-                                <h3 className="fw-bold mb-0">1. Submit Your Portfolio</h3>
+                        <article className="process-card">
+                            <div className="process-header">
+                                <img src="/logo.svg" alt="Company Logo" className="process-icon" />
+                                <h3 className="process-title">1. Submit Your Portfolio</h3>
                             </div>
-                            <img
-                                src="/portfolio.jpg"
-                                alt="Submit Portfolio"
-                                className="img-fluid rounded mt-2 mb-4"
-                            />
-                            <p className="text-muted">
+                            <img src="/portfolio.jpg" alt="Submit Portfolio" className="process-image" />
+                            <p className="process-description">
                                 Share your best work and tell us about your skills, interests, and goals.
                             </p>
-                        </div>
+                        </article>
                     </div>
 
-                    {/* Step 2 */}
+                    {/* Card 2 */}
                     <div className="col-md-4">
-                        <div className="bg-white rounded-4 shadow-sm p-4 h-100 text-start">
-                            <div className="d-flex align-items-start mb-3">
-                                <img
-                                    src="/logo.svg"
-                                    alt="Company Logo"
-                                    style={{ width: '32px', height: 'auto' }}
-                                    className="me-4"
-                                />
-                                <h3 className="fw-bold mb-0">2. Get Reviewed and Approved</h3>
+                        <article className="process-card">
+                            <div className="process-header">
+                                <img src="/logo.svg" alt="Company Logo" className="process-icon" />
+                                <h3 className="process-title">2. Get Reviewed and Approved</h3>
                             </div>
-                            <img
-                                src="/analyse.webp"
-                                alt="Review Portfolio"
-                                className="img-fluid rounded mt-2 mb-4"
-                            />
-                            <p className="text-muted">
+                            <img src="/analyse.webp" alt="Review Portfolio" className="process-image" />
+                            <p className="process-description">
                                 Our team carefully reviews each application to ensure a great match for both candidates and companies.
                             </p>
-                        </div>
+                        </article>
                     </div>
 
-                    {/* Step 3 */}
+                    {/* Card 3 */}
                     <div className="col-md-4">
-                        <div className="bg-white rounded-4 shadow-sm p-4 h-100 text-start">
-                            <div className="d-flex align-items-start mb-3">
-                                <img
-                                    src="/logo.svg"
-                                    alt="Company Logo"
-                                    style={{ width: '32px', height: 'auto' }}
-                                    className="me-4"
-                                />
-                                <h3 className="fw-bold mb-0">3. Connect with Hiring Teams</h3>
+                        <article className="process-card">
+                            <div className="process-header">
+                                <img src="/logo.svg" alt="Company Logo" className="process-icon" />
+                                <h3 className="process-title">3. Connect with Hiring Teams</h3>
                             </div>
-                            <img
-                                src="/connect.jpg"
-                                alt="Connect with Hiring Teams"
-                                className="img-fluid rounded mt-2 mb-4"
-                            />
-                            <p className="text-muted">
+                            <img src="/connect.jpg" alt="Connect with Hiring Teams" className="process-image" />
+                            <p className="process-description">
                                 Once approved, you’ll be introduced to startups and creative companies looking for emerging talent like you.
                             </p>
-                        </div>
+                        </article>
                     </div>
                 </div>
 
-                {/* CTA Button */}
-                <div className="mt-5">
+                <div className="cta-wrapper mt-5">
                     <button className="btn btn-primary">Submit Your Portfolio</button>
                 </div>
             </div>
         </section>
 
-        <section className="py-5">
+{/*Highlight Section*/}
+
+        <section className="highlights-section">
             <div className="container">
                 <div className="row align-items-center">
+
                     {/* Left Column: Text */}
                     <div className="col-md-6 mb-4 mb-md-0">
-                        <h2 className="fw-bold mb-3">Prepare to Shine</h2>
-                        <p className="text-muted" style={{ maxWidth: '500px' }}>
-                            We offer guides and tips to help you stand out when applying to startups and creative teams — from building a strong portfolio to preparing for interviews.
+                        <h2 className="highlights-title">Prepare to Shine</h2>
+                        <p className="highlights-description">
+                            We offer guides and tips to help you stand out when applying to startups and creative teams —
+                            from building a strong portfolio to preparing for interviews.
                         </p>
                     </div>
 
                     {/* Right Column: Carousel */}
                     <div className="col-md-6">
-                        <div className="position-relative">
+                        <div className="carousel-wrapper position-relative">
                             <div id="carouselGuides" className="carousel slide" data-bs-ride="carousel">
-                                <div className="carousel-inner" style={{ overflow: 'visible' }}>
+                                <div className="carousel-inner visible-overflow">
+
                                     {/* Slide 1 */}
                                     <div className="carousel-item active">
-                                        <div className="bg-white rounded-4 shadow-sm p-3">
+                                        <article className="highlight-card">
                                             <img
                                                 src="/computer.jpg"
                                                 alt="Portfolio Slide"
-                                                className="img-fluid rounded mb-3"
+                                                className="highlight-image"
                                             />
-                                            <div className="d-flex justify-content-between align-items-start mb-3">
-                                                {/* Left side: logo + title */}
-                                                <div className="d-flex align-items-center">
+                                            <div className="highlight-subtext">
+                                                <div className="highlight-title-group">
                                                     <img
                                                         src="/logo.svg"
                                                         alt="Logo"
-                                                        style={{ width: '24px', height: 'auto' }}
-                                                        className="me-3 mt-1"
+                                                        className="highlight-logo"
                                                     />
-                                                    <h5 className="fw-bold mb-0">Portfolio Building 101</h5>
+                                                    <h5 className="highlight-title">Portfolio Building 101</h5>
                                                 </div>
-
-                                                {/* Right side: button */}
                                                 <button className="btn btn-primary btn-sm">Read Now</button>
                                             </div>
-                                        </div>
+                                        </article>
                                     </div>
-
 
                                 </div>
 
-                                {/* Carousel controls */}
+                                {/* Carousel Controls */}
                                 <button
                                     className="carousel-control-prev custom-carousel-control"
                                     type="button"
@@ -316,13 +254,53 @@ export default function Page() {
                                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span className="visually-hidden">Next</span>
                                 </button>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+{/*CTA Section*/}
+
+        <section className="cta-section">
+            <div className="container">
+                <div className="cta-block">
+                    <h2 className="cta-title">
+                        Start Your <span className="cta-highlight">Creative Journey</span>.
+                    </h2>
+                    <p className="cta-subtext">
+                        Showcase your skills, connect with forward-thinking teams, and build your future in design and tech.
+                    </p>
+                    <div className="cta-buttons">
+                        <button className="btn btn-outline-light">Join the Directory</button>
+                        <button className="btn btn-primary">Explore Opportunities</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+{/*Footer Section*/}
+
+        <footer className="site-footer">
+            <div className="container">
+                <div className="footer-brand">
+                    <span className="footer-title">NextFirstSteps</span>
+                    <img
+                        src="/logo.svg"
+                        alt="Company Logo"
+                        className="footer-logo"
+                    />
+                </div>
+
+                <div className="footer-subtext">
+                    <small>2025 NextFirstSteps</small>
+                    <small>All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+
 
 
     </>
