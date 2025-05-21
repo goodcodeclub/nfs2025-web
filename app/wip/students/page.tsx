@@ -1,37 +1,14 @@
+import Header from "../_components/header";
+
 export default function Page() {
 
     return <>
 
-{/*Header*/}
+        {/*Header*/}
 
-        <header className="site-header py-4 border-bottom">
-            <div className="container d-flex justify-content-between align-items-center">
+        <Header />
 
-                {/* Logo */}
-                <div className="brand d-flex align-items-start">
-                    <span className="brand-name">NextFirstSteps</span>
-                    <img
-                        src="/logo.svg"
-                        alt="Company Logo"
-                        className="brand-icon"
-                    />
-                </div>
-
-                {/* Navigation */}
-                <nav className="main-nav d-none d-md-flex">
-                    <a href="#">Services</a>
-                    <a href="#">For Employers</a>
-                    <a href="#">For Students</a>
-                </nav>
-
-                {/* CTA Button */}
-                <a href="#" className="btn btn-primary">
-                    Get Started
-                </a>
-            </div>
-        </header>
-
-{/*Hero Section*/}
+        {/*Hero Section*/}
 
         <section className="hero-section">
             <div className="container">
@@ -64,7 +41,7 @@ export default function Page() {
             </div>
         </section>
 
-{/*Sponsor Section*/}
+        {/*Sponsor Section*/}
 
         <section className="sponsor-section">
             <div className="container text-center mb-4">
@@ -88,7 +65,7 @@ export default function Page() {
             </div>
         </section>
 
-{/*Opportunities for Students Section*/}
+        {/*Opportunities for Students Section*/}
 
         <section className="py-5">
             <div className="container">
@@ -129,7 +106,7 @@ export default function Page() {
         </section>
 
 
-{/*Get Started Section*/}
+        {/*Get Started Section*/}
 
         <section className="get-started-section text-center">
             <div className="container">
@@ -189,7 +166,7 @@ export default function Page() {
             </div>
         </section>
 
-{/*Highlight Section*/}
+        {/*Highlight Section*/}
 
         <section className="highlights-section">
             <div className="container">
@@ -261,7 +238,7 @@ export default function Page() {
             </div>
         </section>
 
-{/*CTA Section*/}
+        {/*CTA Section*/}
 
         <section className="cta-section">
             <div className="container">
@@ -281,7 +258,7 @@ export default function Page() {
         </section>
 
 
-{/*Footer Section*/}
+        {/*Footer Section*/}
 
         <footer className="site-footer">
             <div className="container">
